@@ -1,0 +1,7 @@
+<testdata>
+        <applicationurl>https://www.manual2Automation.com</applicationurl>
+        <useid>testUser</useid>
+        <password>Password$$#1</password>
+        <chrome_path>/Users/mkroy/Downloads/chromedriver</chrome_path>
+        <email>mithunroy.ee@gmail.com</email>
+</testdata>
