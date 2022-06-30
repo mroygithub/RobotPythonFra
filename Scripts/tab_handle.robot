@@ -16,7 +16,7 @@ ${url}  https://infyni.com/login/
 Verify Google Application
 
     [documentation]  Verify Google Application
-    [tags]  Smoke
+    [tags]  Smoke100
     Open Browser  ${url}  ${Browser}
     Maximize Browser Window
     Log Title

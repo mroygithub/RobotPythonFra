@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.2 on darwin)" generated="20220627 15:59:28.823" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.8.2 on darwin)" generated="20220627 15:56:38.759" rpa="false" schemaversion="3">
 <suite id="s1" name="Suites">
 <suite id="s1-s1" name="Readxml" source="/Users/mithunroy/PycharmProjects/RobotPy/Scripts/readxml.robot">
 <test id="s1-s1-t1" name="Read XML File" line="19">
 <kw name="Add Two Numbers" library="Action1">
 <var>${value}</var>
 <arg>${1}</arg>
-<msg timestamp="20220627 15:59:29.774" level="INFO">${value} = 6</msg>
-<status status="PASS" starttime="20220627 15:59:29.772" endtime="20220627 15:59:29.774"/>
+<msg timestamp="20220627 15:56:39.257" level="INFO">${value} = 6</msg>
+<status status="PASS" starttime="20220627 15:56:39.255" endtime="20220627 15:56:39.257"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${value}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220627 15:59:29.775" endtime="20220627 15:59:29.777"/>
+<status status="PASS" starttime="20220627 15:56:39.258" endtime="20220627 15:56:39.259"/>
 </kw>
 <kw name="Read Xml" library="Action1">
 <var>${value}</var>
 <arg>password</arg>
-<msg timestamp="20220627 15:59:29.785" level="INFO">${value} = Password$$#1</msg>
-<status status="PASS" starttime="20220627 15:59:29.778" endtime="20220627 15:59:29.785"/>
+<msg timestamp="20220627 15:56:39.264" level="INFO">${value} = Password$$#1</msg>
+<status status="PASS" starttime="20220627 15:56:39.259" endtime="20220627 15:56:39.264"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${value}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220627 15:59:29.786" endtime="20220627 15:59:29.786"/>
+<status status="PASS" starttime="20220627 15:56:39.264" endtime="20220627 15:56:39.265"/>
 </kw>
 <kw name="Read Xml" library="Action">
 <var>${value}</var>
 <arg>password</arg>
-<msg timestamp="20220627 15:59:29.787" level="INFO">${value} = Password$$#1</msg>
-<status status="PASS" starttime="20220627 15:59:29.786" endtime="20220627 15:59:29.787"/>
+<msg timestamp="20220627 15:56:39.266" level="INFO">${value} = Password$$#1</msg>
+<status status="PASS" starttime="20220627 15:56:39.265" endtime="20220627 15:56:39.266"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${value}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220627 15:59:29.787" endtime="20220627 15:59:29.788"/>
+<status status="PASS" starttime="20220627 15:56:39.266" endtime="20220627 15:56:39.267"/>
 </kw>
-<status status="PASS" starttime="20220627 15:59:29.768" endtime="20220627 15:59:29.788"/>
+<status status="PASS" starttime="20220627 15:56:39.253" endtime="20220627 15:56:39.267"/>
 </test>
-<status status="PASS" starttime="20220627 15:59:28.987" endtime="20220627 15:59:29.789"/>
+<status status="PASS" starttime="20220627 15:56:38.818" endtime="20220627 15:56:39.268"/>
 </suite>
-<status status="PASS" starttime="20220627 15:59:28.837" endtime="20220627 15:59:29.791"/>
+<status status="PASS" starttime="20220627 15:56:38.777" endtime="20220627 15:56:39.270"/>
 </suite>
 <statistics>
 <total>

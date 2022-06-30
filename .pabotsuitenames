@@ -1,0 +1,5 @@
+datasources:473ca17534c57ad75553d00e222bbf3943d3c539
+commandlineoptions:d1b79262fefc3041a50660b3be64334c69a0daeb
+suitesfrom:no-suites-from-option
+file:cfd147174bcac8caacac145e41c9f2566c697a95
+--suite Suites.Waitforcondition

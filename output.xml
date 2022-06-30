@@ -1,65 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.2 on darwin)" generated="20220627 13:16:11.805" rpa="false" schemaversion="3">
-<suite id="s1" name="Radioandcheck" source="/Users/mithunroy/PycharmProjects/RobotPy/Scripts/radioandcheck.robot">
-<test id="s1-t1" name="Test Case 1" line="7">
-<kw name="Log To Console" library="BuiltIn">
-<arg>This is test case 1</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220627 13:16:11.855" endtime="20220627 13:16:11.856"/>
+<robot generator="Robot 5.0.1 (Python 3.8.2 on darwin)" generated="20220627 16:33:36.117" rpa="false" schemaversion="3">
+<suite id="s1" name="Waitforcondition" source="/Users/mithunroy/PycharmProjects/RobotPy/Scripts/waitforcondition.robot">
+<test id="s1-t1" name="Verify Google Application" line="16">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220627 16:33:36.490" level="INFO">Opening browser 'Chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20220627 16:33:36.489" endtime="20220627 16:34:08.938"/>
 </kw>
-<tag>Smoke</tag>
-<status status="PASS" starttime="20220627 13:16:11.853" endtime="20220627 13:16:11.856"/>
-</test>
-<test id="s1-t2" name="Test Case 2" line="11">
-<kw name="Log To Console" library="BuiltIn">
-<arg>This is test case 2</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220627 13:16:11.858" endtime="20220627 13:16:11.859"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220627 16:34:08.940" endtime="20220627 16:34:09.134"/>
 </kw>
-<tag>Regression</tag>
-<status status="PASS" starttime="20220627 13:16:11.857" endtime="20220627 13:16:11.859"/>
-</test>
-<test id="s1-t3" name="Test Case 3" line="15">
-<kw name="Log To Console" library="BuiltIn">
-<arg>This is test case 3</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220627 13:16:11.860" endtime="20220627 13:16:11.861"/>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220627 16:34:09.157" level="INFO">${rows} = 7</msg>
+<status status="PASS" starttime="20220627 16:34:09.134" endtime="20220627 16:34:09.157"/>
 </kw>
-<tag>Regression</tag>
-<status status="PASS" starttime="20220627 13:16:11.860" endtime="20220627 13:16:11.861"/>
-</test>
-<test id="s1-t4" name="Test Case 4" line="19">
 <kw name="Log To Console" library="BuiltIn">
-<arg>This is test case 4</arg>
+<arg>${rows}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220627 13:16:11.863" endtime="20220627 13:16:11.864"/>
+<status status="PASS" starttime="20220627 16:34:09.158" endtime="20220627 16:34:09.158"/>
 </kw>
-<tag>Smoke</tag>
-<status status="PASS" starttime="20220627 13:16:11.862" endtime="20220627 13:16:11.864"/>
-</test>
-<test id="s1-t5" name="Test Case 5" line="23">
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${cols}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr[1]/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220627 16:34:09.177" level="INFO">${cols} = 4</msg>
+<status status="PASS" starttime="20220627 16:34:09.159" endtime="20220627 16:34:09.177"/>
+</kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>This is test case 5</arg>
+<arg>${cols}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220627 13:16:11.866" endtime="20220627 13:16:11.866"/>
+<status status="PASS" starttime="20220627 16:34:09.178" endtime="20220627 16:34:09.178"/>
 </kw>
-<tag>Sanity</tag>
-<status status="PASS" starttime="20220627 13:16:11.865" endtime="20220627 13:16:11.866"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${dataRead}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr[2]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220627 16:34:09.212" level="INFO">${dataRead} = Learn Selenium</msg>
+<status status="PASS" starttime="20220627 16:34:09.179" endtime="20220627 16:34:09.212"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${dataRead}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220627 16:34:09.212" endtime="20220627 16:34:09.212"/>
+</kw>
+<kw name="Table Column Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>4</arg>
+<arg>3000</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" starttime="20220627 16:34:09.213" endtime="20220627 16:34:09.352"/>
+</kw>
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>Master In Selenium</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" starttime="20220627 16:34:09.352" endtime="20220627 16:34:09.405"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>3</arg>
+<arg>2</arg>
+<arg>Mukesh</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20220627 16:34:09.467" level="INFO">Table cell contains 'Mukesh'.</msg>
+<status status="PASS" starttime="20220627 16:34:09.405" endtime="20220627 16:34:09.468"/>
+</kw>
+<doc>Verify Google Application</doc>
+<tag>CAT</tag>
+<status status="PASS" starttime="20220627 16:33:36.488" endtime="20220627 16:34:09.468"/>
 </test>
-<doc>Tags in Robot Framework</doc>
-<status status="PASS" starttime="20220627 13:16:11.809" endtime="20220627 13:16:11.868"/>
+<kw name="Suite shutdown" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220627 16:34:09.470" endtime="20220627 16:34:09.608"/>
+</kw>
+<status status="PASS" starttime="20220627 16:34:09.470" endtime="20220627 16:34:09.609"/>
+</kw>
+<doc>Login Functionality</doc>
+<status status="PASS" starttime="20220627 16:33:36.121" endtime="20220627 16:34:09.609"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="2" fail="0" skip="0">Regression</stat>
-<stat pass="1" fail="0" skip="0">Sanity</stat>
-<stat pass="2" fail="0" skip="0">Smoke</stat>
+<stat pass="1" fail="0" skip="0">CAT</stat>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="0" id="s1" name="Radioandcheck">Radioandcheck</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Waitforcondition">Waitforcondition</stat>
 </suite>
 </statistics>
 <errors>
