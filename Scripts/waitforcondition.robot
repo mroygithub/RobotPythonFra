@@ -27,7 +27,7 @@ Verify Google Application
     ${dataRead}=    get text    xpath://table[@name='BookTable']/tbody/tr[2]/td[1]
     log to console  ${dataRead}
 
-    #column  #Testing
+    #column  #Testing5
     table column should contain     xpath://table[@name='BookTable']    4       3000
 
     #row
